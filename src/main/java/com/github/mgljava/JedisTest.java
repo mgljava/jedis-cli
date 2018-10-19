@@ -7,7 +7,7 @@ import redis.clients.jedis.Jedis;
  */
 public class JedisTest {
   public static void main(String[] args) {
-    Jedis jedis = new Jedis("120.78.144.147", 6379);
+    Jedis jedis = new Jedis("localhost", 6379);
     System.out.println(jedis.exists("name"));
     jedis.set("name", "zhangsan");
     System.out.println(jedis.get("name"));
